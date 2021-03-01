@@ -1,0 +1,54 @@
+// primary
+$primary: #f406bc;
+
+//  Colour Palette
+$pink: #f406bc;
+$blue: #0662f4;
+$purple: #480198;
+$black: #231f20;
+$grey: #dfdfdf;
+$lightGrey: #fafafa;
+$white: #ffffff;
+
+// Usage
+$background: $lightGrey;
+/* #020202; */
+$docBackground: $white;
+$lineColor: $grey;
+$textColor: $black;
+$hColor: $black;
+$linkColor: $purple;
+
+// Typography
+$headingFont: 'Montserrat', sans-serif;
+$bodyFont: 'Open Sans', sans-serif;
+$headingWeight: 400;
+$bodyWeight: 400;
+$baseFontSize: 112.5%;
+
+$p: 1.25rem;
+$h1: 3.052rem;
+$h2: 2.441rem;
+$h3: 1.953rem;
+$h4: 1.563em;
+$h5: $baseFontSize;
+$smallText: 0.8em;
+
+// Borders
+$borderRadius: 6px;
+$borderLine: 1px solid $lineColor;
+
+// Shadows
+$shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+// Containers
+$containerMaxWidth: 100%;
+$containerHorizontalPadding: 1.25rem;
+
+//  Waves
+$wave: $lightGrey;

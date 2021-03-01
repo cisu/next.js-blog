@@ -1,0 +1,10 @@
+@import '../../styles/utilities';
+
+.container {
+  text-align: center;
+  margin-bottom: 100px;
+  h4 {
+    font-size: $h2;
+    margin-bottom: 20px;
+  }
+}
