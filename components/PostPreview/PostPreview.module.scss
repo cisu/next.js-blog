@@ -1,11 +1,26 @@
 @import '../../styles/utilities';
 
+.container {
+  margin: 0 auto;
+}
+
+.postLink {
+  color: transparent;
+  text-decoration: none;
+  transition: none;
+}
+
 .image {
-  border-radius: 50px;
+  border-radius: 60px;
 }
 
 .pill {
   height: 32px;
   width: 90px;
   background-color: #ffd3f5;
+  border-radius: 50px;
+  margin: 26px 0 0;
+  p {
+    color: $pink;
+  }
 }

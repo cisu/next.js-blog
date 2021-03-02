@@ -15,9 +15,9 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div>
+    <div className={styles.container}>
       <Link as={`/posts/${slug}`} href='/posts/[slug]'>
-        <a aria-label={title}>
+        <a className={styles.postLink} aria-label={title}>
           <Image
             src={coverImage}
             alt={`Cover Image for ${title}`}

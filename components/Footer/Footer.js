@@ -4,7 +4,7 @@ import {Container} from '../index';
 
 export default function Footer() {
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <Container>
         <div>logo</div>
         <div className={styles.grid}>
@@ -36,6 +36,6 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-    </div>
+    </footer>
   );
 }
