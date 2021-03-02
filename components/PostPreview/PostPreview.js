@@ -1,0 +1,45 @@
+import Avatar from '../../components/avatar';
+import DateFormatter from '../../components/date-formatter';
+import CoverImage from '../../components/cover-image';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import styles from './PostPreview.module.scss';
+
+export default function PostPreview({
+  title,
+  coverImage,
+  date,
+  excerpt,
+  author,
+  slug,
+}) {
+  return (
+    <div>
+      <Link as={`/posts/${slug}`} href='/posts/[slug]'>
+        <a aria-label={title}>
+          <Image
+            src={coverImage}
+            alt={`Cover Image for ${title}`}
+            className={styles.image}
+            height={350}
+            width={350}
+          />
+
+          <div>
+            <div>
+              <div className={styles.pill}>
+                <p>Tech</p>
+              </div>
+              <h3>{title}</h3>
+            </div>
+            <div>
+              <p>{excerpt}</p>
+              <Avatar name={author.name} picture={author.picture} />
+            </div>
+          </div>
+        </a>
+      </Link>
+    </div>
+  );
+}

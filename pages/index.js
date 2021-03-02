@@ -8,10 +8,11 @@ import Head from 'next/head';
 import {CMS_NAME} from '../lib/constants';
 
 import {CallToAction} from '../sections';
+import {Blog} from '../sections';
 
 export default function Index({allPosts}) {
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
+  // const heroPost = allPosts[0];
+  // const morePosts = allPosts.slice(1);
   return (
     <>
       <Layout>
@@ -20,18 +21,10 @@ export default function Index({allPosts}) {
         </Head>
         <Container>
           <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
+      
+        <Blog posts={allPosts} />
+
         <CallToAction />
       </Layout>
     </>
